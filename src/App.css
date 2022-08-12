@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2fd680;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #00f577;
+    display: flex;
+}
+
+h3{
+    background-color: #00f577;
+    font-size: 30px;
+    color: #317552;
+    margin-left: 10%;
+    line-height: 80px;
+}
+
+input[type='text']{
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 20px;
+    background-color: white;
+    position: absolute;
+    right: 10%;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: gray;
+}
+
+
+/* Pokemons */
+
+.pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemons{
+    text-align: center;
+    width: 220px;
+    height: 300px;
+    margin: 30px;
+    float: left;
+    cursor: pointer;
+    background-color: #317552;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+.num-pokemon{
+    cursor: pointer;
+    background-color: #317552;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+img{
+    border: 3px solid greenyellow;
+    background-color: green;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.nome-pokemon{
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #317552;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+span{
+    font-size: 12px;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.display-none{
+    display: none;
+}
+
+/* Tipos de pokemons */
+
+.grass{
+    background-color: #9BCC50;
+}
+
+.fire{
+    background-color: #FD7D24;
+}
+
+.poison{
+    background-color: #B97FC9;
+}
+
+.flying{
+    background-color: #3DC7EF;
+}
+
+.water{
+    background-color: #4592C4;
+}
+
+.bug{
+    background-color: #729F3F;
+}
+
+.normal{
+    background-color: #A4ACAF;
+}
+
+.electric{
+    background-color: #EED535;
+}
+
+.ground{
+    background-color: #ab9842;
+}
+
+.fairy{
+    background-color: #FDB9E9;
+}
+
+.fighting{
+    background-color: #d56723;
+}
+
+.psychic{
+    background-color: #f366b9;
+}
+
+.rock{
+    background-color: #a38c21;
+}
+
+.steel{
+    background-color: #9eb7b8;
+}
+
+.ice{
+    background-color: #51c4e7;
+}
+
+.ghost{
+    background-color: #7b62a3;
+}
+
+.dragon{
+    background: #f16e57;
+}
+
+.dark{
+    background-color: #707070;
+}
