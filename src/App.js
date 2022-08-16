@@ -8,6 +8,7 @@ function App() {
       <Search />
       <h5 id='carregando'>CARREGANDO ...</h5>
       <Pokemons />
+      <footer></footer>
     </div>
   );
 }

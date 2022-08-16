@@ -31,12 +31,11 @@ async function getpokemon(){
         const div = document.createElement('div');
         div.classList.add('pokemons');
         div.classList.add(name)
-        
-        // Adicionando elementos a div pai
+
         div.append(nume);
         div.append(imge)
         div.appendChild(namee);
-
+        
         // Adicionando tipos de cada pokemon
         data.types.map(tipo => {
             
@@ -83,25 +82,33 @@ async function getpokemon(){
             }
         });
 
-        const pokemon = document.querySelector('.pokemon');
-        pokemon.appendChild(div);
-        n+=1
-
-        if (n != 906){
-            document.querySelector('.pokemon').classList.add('display-none')
-        }else{
+        if (n > 20){
+            div.classList.add('display-none')
             document.querySelector('.pokemon').classList.remove('display-none') 
             document.querySelector('#carregando').classList.add('display-none')
         }
+
+        const pokemon = document.querySelector('.pokemon');
+        pokemon.appendChild(div);
+
+        n+=1
+
     }
+}
+
+const todos = ()=>{document.querySelectorAll('.pokemons').forEach((name)=>{
+        name.classList.remove('display-none')
+    })
 }
 
 getpokemon();
 
-
 function Pokemon(){
     return(
-        <div className='pokemon'>
+        <div className='pokemon display-none'>
+            <div className='button' onClick={todos}>
+                <p>Mostrar tudo</p>
+            </div>
         </div>
     )
 }
