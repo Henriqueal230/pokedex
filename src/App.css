@@ -45,6 +45,15 @@ input[type='text']{
     color: gray;
 }
 
+/*Carregando*/
+#carregando{
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 1.5em;
+    color: #317552;
+    animation: sobe 1s infinite;
+}
+
 
 /* Pokemons */
 
@@ -173,4 +182,28 @@ span{
 
 .dark{
     background-color: #707070;
+}
+
+@media screen and (max-width: 800px) {
+    input[type='text']{
+        width: 80%;
+        font-size: 1em;
+        background-color: white;
+        right: none;
+        margin-top: 20px;
+    }
+
+    h3{
+        display: none;
+    }
+}
+
+@keyframes sobe{
+    0%, 100%{
+        margin-top: 40vh
+    }
+
+    50%{
+        margin-top: 38vh
+    }
 }

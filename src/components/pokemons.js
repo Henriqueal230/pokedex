@@ -86,6 +86,13 @@ async function getpokemon(){
         const pokemon = document.querySelector('.pokemon');
         pokemon.appendChild(div);
         n+=1
+
+        if (n != 906){
+            document.querySelector('.pokemon').classList.add('display-none')
+        }else{
+            document.querySelector('.pokemon').classList.remove('display-none') 
+            document.querySelector('#carregando').classList.add('display-none')
+        }
     }
 }
 

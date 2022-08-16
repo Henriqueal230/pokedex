@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <Search />
+      <h5 id='carregando'>CARREGANDO ...</h5>
       <Pokemons />
     </div>
   );
