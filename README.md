@@ -1,4 +1,4 @@
 # pokedex
 Minha pokedex com ReactJs
 
-GitHub-Pages: https://henriqueal230.github.io/pokedex/
+GitHub-Pages: https://henriqueeal.github.io/pokedex/
