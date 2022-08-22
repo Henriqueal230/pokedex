@@ -1,0 +1,43 @@
+.pokemons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1vh;
+}
+
+.pokemon{
+    width: 28%;
+    height: 30vh;
+    background-color: #317552;
+    margin-top: 3vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+img{
+    background-color: green;
+    border: 3px solid #adff2f;
+}
+
+@media (max-width:1000px){
+    .pokemon{
+        width: 40%;
+    }
+}
+
+@media (max-width:800px){
+    .pokemon{
+        width: 80%;
+    }
+}
